@@ -1,0 +1,6 @@
+Jeżeli chcesz dodać użytkownika osobnego, to masz instrukcję:
+1. Dodaj usera: useradd --create-home <nazwa usera>
+2. Dograj sudo: pacman -S sudo
+3. Otwórz plik: visudo 
+4. Pod root ALL=(ALL) ALL dodaj takie samo, tylko z nazwą użytkownika
+
