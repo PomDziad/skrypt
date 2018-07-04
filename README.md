@@ -6,7 +6,7 @@ Odpalając skrypt, o ile nic nie popsułem, odpalisz środowisko graficzne bez i
 <h3>Co będzie potrzebne</h3>
 Nośnik USB z wypalonym obrazem Arch Linuxa pobranym z oficjalnej strony oraz połączenie z internetem. wifi-menu powinno pomóc z siecią bezprzewodową.
 <h3>Jak to odpalić?</h3>
-Po uruchomieniu Archa z nośnika wpisz: wget raw.githubusercontent.com/PomDziad/skrypt/master/arch.sh
+Po uruchomieniu Archa z nośnika wpisz: wget raw.githubusercontent.com/PomDziad/skrypt/master/arch.sh <br>
 Skrypt odpalasz przez: bash arch.sh (możesz oczywiście zerknąć do środka poprzez nano) 
 <h3>Problemy</h3>
 Ledwo zacząłem to robić, więc całość jest problemem, chociaż działa i robi swoje. Z jakiegoś powodu pulpit potrafi nie reagować, więc trzeba się wylogować i znowu zalogować. Wtedy działa normalnie.
