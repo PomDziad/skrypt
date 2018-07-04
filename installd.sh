@@ -19,10 +19,6 @@ grub-mkconfig -o /boot/grub/grub.cfg &&
 #podstawy środowiska
 pacman -S xorg lightdm lightdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo &&
 
-#Ustawianie greetera
-echo "[Seat:*]
-greeter-session=lightdm-gtk-greeter" > /etc/lightdm/lightdm.conf.d
-
 #Hasło admina
 echo "Wpisz hasło dla konta root"
 passwd &&
@@ -34,5 +30,8 @@ useradd --create-home $user &&
 passwd $user &&
 
 #włączanie lightdm
+echo "[Seat:*]
+greeter-session=lightdm-gtk-greeter" > /etc/lightdm/lightdm.conf.d
+&&
 systemctl enable lightdm && echo "Teraz zresetuj"
 
