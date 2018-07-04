@@ -12,12 +12,12 @@ echo "LANG=pl_PL.UTF-8" > /etc/locale.conf &&
 echo "ArchLinux" > /etc/hostname &&
 
 #bootloader (grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB dla EFI)
-pacman -S grub &&
+pacman -S --noconfirm grub &&
 grub-install --target=i386-pc /dev/sda &&
 grub-mkconfig -o /boot/grub/grub.cfg &&
 
 #podstawy środowiska
-pacman -S xorg lightdm lightdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo &&
+pacman -S --noconfirm xorg lightdm lightdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo &&
 
 #Hasło admina
 echo "Wpisz hasło dla konta root"
