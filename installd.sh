@@ -27,7 +27,7 @@ useradd --create-home $user &&
 passwd $user &&
 
 #podstawy środowiska
-pacman -S xorg lightdm ligthdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo &&
+pacman -S xorg lightdm lightdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo &&
 
 #Ustawianie greetera
 echo "[Seat:*]
