@@ -10,7 +10,7 @@ case $zgoda in
 esac
 
 #Instalacja podstawy
-pacstrap /mnt base &&
+pacstrap /mnt base base-devel &&
 
 #FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab &&
