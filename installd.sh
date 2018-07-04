@@ -1,4 +1,7 @@
 #!/bin/bash
+#pacman
+pacman -Sy &&
+
 #Czas
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime && hwclock --systohc &&
 
