@@ -31,7 +31,6 @@ passwd $user &&
 
 #włączanie lightdm
 echo "[Seat:*]
-greeter-session=lightdm-gtk-greeter" > /etc/lightdm/lightdm.conf.d
-&&
+greeter-session=lightdm-gtk-greeter" > /etc/lightdm/lightdm.conf.d &&
 systemctl enable lightdm && echo "Teraz zresetuj"
 
