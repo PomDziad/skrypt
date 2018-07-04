@@ -4,6 +4,7 @@ setfont Lat2-Terminus16.psfu.gz -m 8859-2 &&
 echo "Ten skrypt ma za zadanie uruchomienie 
 środowiska graficznego LXDE na Arch Linuxie 
 bez jego instalacji. Aby kontynuować, wciśnij ENTER."
+read zgoda &&
 #Rozszerzanie dostępnego miejsca na USB
 mount -o remount,size=2G /run/archiso/cowspace &&
 #Wgrywanie niezbędnych pakietów i późniejsze usunięcie pozostałości
@@ -17,7 +18,7 @@ echo "Jeżeli chcesz dodać użytkownika osobnego, to masz instrukcję:
 1. Dodaj usera: useradd --create-home <nazwa usera>
 2. Dograj sudo: pacman -S sudo
 3. Otwórz plik: visudo /etc/sudoers
-4. Pod root ALL=(ALL) ALL dodaj takie samo, tylko z nazwą użytkownika" >> ./Desktop/README.txt &&
+4. Pod root ALL=(ALL) ALL dodaj takie samo, tylko z nazwą użytkownika" > ./Desktop/README.txt &&
 echo "Za chwilę powinien uruchomić sie ekran logowania. 
 Użytkownik to root, a hasła nie ma. 
 Możesz dodać hasło dla konta root 
@@ -25,7 +26,7 @@ za pomocą komendy passwd.
 W pliku README jest info o dodawaniu
 zwykłego użytkownika. 
 Wciśnij ENTER, aby kontynuować."
-read zgoda1
+read zgoda1 &&
 #Wystartowanie menadżera logowania
 systemctl start lightdm
 
