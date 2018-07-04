@@ -3,10 +3,10 @@
 setfont Lat2-Terminus16.psfu.gz -m 8859-2 &&
 
 #Zgoda
-echo "NAJPIERW TRZEBA PRZYGOTOWAĆ I ZAMONTOWAĆ PARTYCJE! wpisz ok, jeżeli już są zrobione w cfdisk"
+echo "NAJPIERW TRZEBA PRZYGOTOWAĆ I ZAMONTOWAĆ PARTYCJE! wpisz 'nie', jeżeli już są zrobione w cfdisk"
 read zgoda
 case $zgoda in
-"ok") exit ;;
+"nie") exit ;;
 esac
 
 #Instalacja podstawy
