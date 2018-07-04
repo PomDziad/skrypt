@@ -17,7 +17,7 @@ grub-install --target=i386-pc /dev/sda &&
 grub-mkconfig -o /boot/grub/grub.cfg &&
 
 #podstawy środowiska
-pacman -S --noconfirm xorg lightdm lightdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo &&
+pacman -S --noconfirm xorg lightdm lightdm-gtk-greeter xf86-video-vesa ttf-dejavu lxde leafpad sudo dialog &&
 
 #Hasło admina
 echo "Wpisz hasło dla konta root"
