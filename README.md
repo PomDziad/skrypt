@@ -1,5 +1,6 @@
 <h1>Skrypt uruchamiający środowisko LXDE z nośnika instalacyjnego ArchLinuxa</h>
 <h5>Wykonał Pom Pom/Dziadek Starowinek z klasy IIIb Szkoły Podstawowej w Ubieszynie</h>
+<h3>Obecnie zrobiona jest wersja dla virtualboxa. Różnica jest w sterowniku, więc można samemu zmienić xf86-video. Dorobię alternatywne wersje, jak ogarnę jakąś w miarę wersję ogólnie.</h3>
 <h3>Po co to?</h3>
 Odpalając skrypt, o ile nic nie popsułem, odpalisz środowisko graficzne bez instalacji Archa. Możesz zarówno przetestować działanie, jak i z jego poziomu zainstalować sobie system, korzystając z ArchWiki.
 <h3>Co będzie potrzebne</h3>
