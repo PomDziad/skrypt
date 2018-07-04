@@ -3,7 +3,7 @@
 setfont Lat2-Terminus16.psfu.gz -m 8859-2 &&
 
 #Zgoda
-echo "NAJPIERW TRZEBA PRZYGOTOWAĆ I ZAMONTOWAĆ PARTYCJE! wpisz 'nie', jeżeli już są zrobione w cfdisk"
+echo "NAJPIERW TRZEBA PRZYGOTOWAĆ I ZAMONTOWAĆ PARTYCJE! wpisz 'nie', jeżeli NIE są zrobione w cfdisk"
 read zgoda
 case $zgoda in
 "nie") exit ;;
@@ -13,7 +13,7 @@ esac
 pacstrap /mnt base
 
 #FSTAB
-genfstab >U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 
 #chrootowanie
 arch-chroot /mnt
