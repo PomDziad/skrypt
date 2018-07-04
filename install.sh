@@ -16,5 +16,7 @@ pacstrap /mnt base &&
 genfstab -U /mnt >> /mnt/etc/fstab &&
 
 #chrootowanie
-wget raw.githubusercontent.com/PomDziad/skrypt/master/installd.sh > /mnt/installd.sh && arch-chroot /mnt bash installd.sh
+wget raw.githubusercontent.com/PomDziad/skrypt/master/installd.sh > /mnt/installd.sh && arch-chroot /mnt bash installd.sh &&
+clear
+rm install.sh
 
